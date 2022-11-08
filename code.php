@@ -5,10 +5,10 @@
     // * NOTE: For signing up
     if(isset($_POST["register"]))
     {
-        $email = $_POST['email'];
+        $username = $_POST['username'];
         $password = $_POST['password'];
 
-        $check = "SELECT * FROM user WHERE email = '$email'";
+        $check = "SELECT * FROM user WHERE username = '$username'";
         $rs = mysqli_query($con, $check);
         $data = mysqli_fetch_array($rs, MYSQLI_NUM);
         if($data[0] > 1) 
@@ -17,7 +17,7 @@
         }
         else
         {
-            $query = "INSERT INTO user (email, password) VALUES ('$email', '$password')";
+            $query = "INSERT INTO user (username, password) VALUES ('$username', '$password')";
 
             $result = mysqli_query($con, $query);
             
@@ -35,10 +35,10 @@
     // * NOTE: For logging in
     if(isset($_POST["login"]))
     {
-        $email = $_POST['email'];
+        $username = $_POST['username'];
         $password = $_POST['password'];
 
-        $query = "SELECT * FROM user WHERE email = '$email'";
+        $query = "SELECT * FROM user WHERE username = '$username'";
         $result = mysqli_query($con, $query);
 
         if(!$result)
@@ -50,9 +50,9 @@
             $user = mysqli_fetch_row($result);
 
             //var_dump($user);
-            if(strcmp($user[2], $password) == 0)
+            if(strcmp($user[1], $password) == 0)
             {
-                header("Location: twitter-login.php");
+                header("Location: twitter-login.php?user=$username");
             }
             else
             {

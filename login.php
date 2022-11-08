@@ -22,8 +22,8 @@
                     <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
                     <p class="text-white-50 mb-5">Please enter your login and password!</p>
                     <div class="form-outline form-white mb-4 text-center">
-                      <input type="email" id="typeEmailX" name="email" class="form-control form-control-lg" required />
-                      <label class="form-label" for="typeEmailX">Email</label>
+                      <input type="text" id="typeUsernameX" name="username" class="form-control form-control-lg" required />
+                      <label class="form-label" for="typeEmailX">Username</label>
                     </div>
                     <div class="form-outline form-white mb-4 text-center">
                       <input type="password" id="typePasswordX" name="password" class="form-control form-control-lg" required />

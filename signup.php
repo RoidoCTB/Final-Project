@@ -21,8 +21,8 @@
                     <form action="code.php" method="post">
                       <h2 class="fw-bold mb-2 text-uppercase">Register</h2><br>
                       <div class="form-outline form-white mb-4">
-                        <input type="email" id="typeEmailX" name="email" class="form-control form-control-lg" required />
-                        <label class="form-label" for="typeEmailX">Email</label>
+                        <input type="text" id="typeUsernameX" name="username" class="form-control form-control-lg" required />
+                        <label class="form-label" for="typeEmailX">Username</label>
                       </div>
                       <div class="form-outline form-white mb-4">
                         <input type="password" id="typePasswordX" name="password" class="form-control form-control-lg" required />
