@@ -27,7 +27,7 @@
             }
             else
             {
-                header("Location: login.html");
+                header("Location: login.php");
             }
         }
     }
@@ -38,7 +38,7 @@
         $email = $_POST['email'];
         $password = $_POST['password'];
 
-        $query = "SELECT email FROM user WHERE email = '$email'";
+        $query = "SELECT * FROM user WHERE email = '$email'";
         $result = mysqli_query($con, $query);
 
         if(!$result)
@@ -47,10 +47,12 @@
         }
         else
         {
-            $user = mysqli_fetch_assoc($result);
-            if($user['password'] == $password)
+            $user = mysqli_fetch_row($result);
+
+            //var_dump($user);
+            if(strcmp($user[2], $password) == 0)
             {
-                header("Location: twitter-login.html");
+                header("Location: twitter-login.php");
             }
             else
             {
