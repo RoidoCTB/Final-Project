@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="text-center fs-1 text">
-                    Welcome XXX!
+                    Welcome <?php echo $_GET['user']; ?>
                 </div>
             </div>
         </div>
@@ -23,7 +23,7 @@
     <div class="container float-end">
         <div class="row">
             <div class="col-8">
-                <input type="button" value="Sign out">
+                <a href="login.php">Sign out</a>
             </div>
         </div>
     </div>
