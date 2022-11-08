@@ -1,6 +1,7 @@
 <?php
 
     // * NOTE: Connect to database
+    
     $con = mysqli_connect("localhost", "root", "", "user");
 
     if(!$con)
