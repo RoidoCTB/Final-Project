@@ -47,7 +47,7 @@
         }
         else
         {
-            $user = mysql_fetch_assoc($result);
+            $user = mysqli_fetch_assoc($result);
             if($user['password'] == $password)
             {
                 header("Location: twitter-login.html");
