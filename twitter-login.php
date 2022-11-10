@@ -32,7 +32,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="list-group mx-auto text-center">
+                <div class="list-group mx-auto text-center border">
                     <div class="d-flex w-100 justify-content-between">
                        <h5 class="mb-2 mx-auto">This is a tweet</h5>
                     </div>
