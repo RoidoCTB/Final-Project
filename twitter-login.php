@@ -18,7 +18,7 @@
             </div>
         </div>
     </div>
-<section class="vh-100 gradient-custom">
+<section class="vh-100 gradient-custom ">
         <div class="container py-5 h-100">
           <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col-12 col-md-10 col-lg-11 col-xl-9">
@@ -32,19 +32,19 @@
                     </div>
                   </div>
                 </div>
-                <div class="list-group mx-auto text-center border">
+                <div class="list-group mx-auto text-center ">
                     <div class="d-flex w-100 justify-content-between">
-                       <h5 class="mb-2 mx-auto">This is a tweet</h5>
+                       <h5 class="mb-3 mt-5">This is a tweet</h5>
                     </div>
-                        <p class="mb-5 p-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione mollitia, laudantium quas vel facere minima ullam obcaecati reiciendis eveniet sapiente aliquid iure. Maxime, corrupti maiores. Perspiciatis, hic. Beatae, iusto consectetur.</p>
+                        <p class="mb-5 p-5  border border-primary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione mollitia, laudantium quas vel facere minima ullam obcaecati reiciendis eveniet sapiente aliquid iure. Maxime, corrupti maiores. Perspiciatis, hic. Beatae, iusto consectetur.</p>
                            <div class="d-flex w-100 justify-content-between">
-                              <h5 class="mb-1 mx-auto">This is a tweet</h5>
+                              <h5 class="mb-3">This is a tweet</h5>
                            </div>
-                             <p class="mb-5 p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi obcaecati repellat ratione distinctio labore praesentium at, nam soluta veritatis ea. Totam optio molestias dolore culpa obcaecati, unde quisquam ab. Magnam?</p>
+                             <p class="mb-5 p-5 border border-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi obcaecati repellat ratione distinctio labore praesentium at, nam soluta veritatis ea. Totam optio molestias dolore culpa obcaecati, unde quisquam ab. Magnam?</p>
                                 <div class="d-flex w-100 justify-content-between">
-                                  <h5 class="mb-1 mx-auto">This is a tweet</h5>
+                                  <h5 class="mb-3">This is a tweet</h5>
                                 </div>
-                                  <p class="mb-5 p-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit minus repellendus, cum quia, id porro quam consequuntur ipsam quisquam quod praesentium eos adipisci cumque libero reprehenderit pariatur aliquid nostrum labore.</p>
+                                  <p class="mb-5 p-5 border border-primary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit minus repellendus, cum quia, id porro quam consequuntur ipsam quisquam quod praesentium eos adipisci cumque libero reprehenderit pariatur aliquid nostrum labore.</p>
                 </div>
               </div>
             </div>
