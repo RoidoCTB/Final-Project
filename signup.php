@@ -28,8 +28,12 @@
                         <input type="password" id="typePasswordX" name="password" class="form-control form-control-lg" required />
                         <label class="form-label" for="typePasswordX">Password</label>
                       </div>
-                      <button class="btn btn-outline-light btn-lg px-5" type="submit" name="register">Sign up</button>
+                      <button class="btn btn-outline-light btn-lg px-5 mb-5" type="submit" name="register">Sign up</button>
                     </form>
+                    <div>
+                    <p class="mb-0">Have an account already? <a href="index.php" class="text-white-50 fw-bold">Login</a>
+                    </p>
+                  </div>
                   </div>
                 </div>
               </div>
