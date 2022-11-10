@@ -30,7 +30,7 @@
   </div>
     <div class="container mt-5 p-5">
         <div class="row">
-            <div class="col-8 mx-auto float-end">
+            <div class="col-9 mx-auto float-end">
                 <a href="index.php">Sign out</a>
             </div>
         </div>
