@@ -27,7 +27,7 @@
             }
             else
             {
-                header("Location: login.php");
+                header("Location: index.php");
             }
         }
     }
@@ -58,6 +58,25 @@
             {
                 echo "Incorrect password.";
             }
+        }
+    }
+
+    if(isset($_POST["tweet"]))
+    {
+        $username = $_POST['username'];
+        $body = $_POST['tweet-body'];
+
+        $query = "INSERT INTO tweet (username, text) VALUES ('$username', '$body')";
+
+        $result = mysqli_query($con, $query);
+            
+        if(!$result)
+        {
+            echo "Tweet not created.";
+        }
+        else
+        {
+            header("Location: twitter-login.php?user=$username");
         }
     }
 

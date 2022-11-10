@@ -31,7 +31,7 @@
                       <button class="btn btn-outline-light btn-lg px-5 mb-5" type="submit" name="register">Sign up</button>
                     </form>
                     <div>
-                    <p class="mb-0">Have an account already? <a href="index.php" class="text-white-50 fw-bold">Login</a>
+                    <p class="mb-0">Already have an account? <a href="index.php" class="text-white-50 fw-bold">Login</a>
                     </p>
                   </div>
                   </div>
