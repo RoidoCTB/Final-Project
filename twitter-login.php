@@ -32,11 +32,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="list-group mx-auto text-center ">
+                <div class="list-group">
                     <div class="d-flex w-100 justify-content-between">
                        <h5 class="mb-3 mt-5">This is a tweet</h5>
                     </div>
-                        <p class="mb-5 p-5  border border-primary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione mollitia, laudantium quas vel facere minima ullam obcaecati reiciendis eveniet sapiente aliquid iure. Maxime, corrupti maiores. Perspiciatis, hic. Beatae, iusto consectetur.</p>
+                        <p class="mb-5 p-5 border border-primary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione mollitia, laudantium quas vel facere minima ullam obcaecati reiciendis eveniet sapiente aliquid iure. Maxime, corrupti maiores. Perspiciatis, hic. Beatae, iusto consectetur.</p>
                            <div class="d-flex w-100 justify-content-between">
                               <h5 class="mb-3">This is a tweet</h5>
                            </div>
