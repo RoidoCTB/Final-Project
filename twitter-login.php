@@ -13,17 +13,25 @@
 <body>
     <div class="container mt-5">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 mx-auto">
                 <div class="text-center fs-1 text">
                     Welcome <?php echo $_GET['user']; ?>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container float-end">
+  <div class="container-fluid mt-3 p-5">
+    <div class="row">
+        <div class="col-6 mx-auto">
+                <input class="input-group input-group-text p-5" type="text" placeholder="What's happening?">
+                <input class="float-end btn btn-primary mt-3" type="submit" name="" value="Tweet">
+        </div>
+    </div>
+  </div>
+    <div class="container mt-5 p-5">
         <div class="row">
-            <div class="col-8">
-                <a href="login.php">Sign out</a>
+            <div class="col-8 mx-auto float-end">
+                <a href="index.php">Sign out</a>
             </div>
         </div>
     </div>
