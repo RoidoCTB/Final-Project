@@ -11,8 +11,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!--Signup -->
-    <section class="vh-100 gradient-custom">
+  <div style="background-image: url('https://cdn.discordapp.com/attachments/446349596524806160/1044890819125063700/pexels-catia-matos-10721792.jpg'); height :auto;" class="bg-image">
+  <section class="vh-100 gradient-custom">
         <div class="container py-5 h-100">
           <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col-12 col-md-8 col-lg-6 col-xl-5">
@@ -21,6 +21,7 @@
                   <div class="mb-md-5 mt-md-4 pb-5">
                     <form action="code.php" method="post">
                       <h2 class="fw-bold mb-2 text-uppercase">Register</h2><br>
+                      <p class="text-white-50 mb-5">Please use an appropriate Username and Strong password!</p>
                       <div class="form-outline form-white mb-4">
                         <input type="text" id="typeUsernameX" name="username" class="form-control form-control-lg" required />
                         <label class="form-label" for="typeEmailX">Username</label>
@@ -42,5 +43,6 @@
           </div>
         </div>
       </section>
+  </div>
 </body>
 </html>

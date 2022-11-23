@@ -18,7 +18,6 @@
     </style>
 </head>
 <body>
-
 <?php $username = $_GET['user']; ?>
 
 <div class="container">
