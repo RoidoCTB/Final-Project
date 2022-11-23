@@ -18,12 +18,28 @@
     </style>
 </head>
 <body>
-<?php $username = $_GET['user']; ?>
+<?php 
+  require "dbcon.php";
+  $username = $_GET['user']; 
+  $query = "SELECT * FROM user WHERE username = '$username'";
+  $result = mysqli_query($con, $query);
+  $user_id;
+
+  if(!$result)
+  {
+      echo "User does not exists.";
+  }
+  else
+  {
+      $user = mysqli_fetch_row($result);
+      $user_id = $user[0];
+  }
+?>
 
 <div class="container">
         <div class="row">
             <div class="col-9 mx-auto">
-            <a href="edit.php"><button type="submit" class="btn btn-primary float-end" name="edit">Edit Profile</button></a>
+            <a href="edit.php?id=<?php echo $user_id; ?>"><button type="submit" class="btn btn-primary float-end" name="edit">Edit Profile</button></a>
                 <a href="index.php">Sign out</a>
             </div>
         </div>

@@ -96,7 +96,48 @@
         {
             header("Location: twitter-login.php?user=$username");
         }
+    }
 
+    if(isset($_POST['update']))
+    {
+        $username = $_POST['username'];
+        $oldUsername = $_POST['old_username'];
+        $password = $_POST['password'];
+        $user_id = $_POST['id'];
+
+        $check = "SELECT * FROM user WHERE username = '$username'";
+        $rs = mysqli_query($con, $check);
+        $data = mysqli_fetch_array($rs, MYSQLI_NUM);
+        if($data[0] > 1) 
+        {
+            echo "User Already Exists.";
+        }
+        else
+        {
+            $query = "UPDATE user 
+            SET password='$password', username='$username'
+            WHERE id='$user_id'";
+            $query_run = mysqli_query($con, $query);
+
+            if(!$query_run)
+            {
+                echo "Update failed";
+            }
+            else
+            {
+                $query = "UPDATE tweet 
+                        SET username='$username'
+                        WHERE username='$oldUsername'";
+
+                //im fucking stupoid
+                $query_run = mysqli_query($con, $query);
+                
+                if($query_run)
+                {
+                    header("Location: twitter-login.php?user=$username");
+                }
+            }
+        }
     }
 
 

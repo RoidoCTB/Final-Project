@@ -11,6 +11,25 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </head>
 
+<?php 
+  require "dbcon.php";
+  $user_id = $_GET['id']; 
+  $query = "SELECT * FROM user WHERE id = '$user_id'";
+  $result = mysqli_query($con, $query);
+  $username;
+
+  if(!$result)
+  {
+      echo "User does not exists.";
+  }
+  else
+  {
+      $user = mysqli_fetch_row($result);
+      $username = $user[2];
+  }
+
+?>
+
 <body>
   <div style="background-image: url('https://cdn.discordapp.com/attachments/446349596524806160/1044890819125063700/pexels-catia-matos-10721792.jpg'); height :auto;" class="bg-image">
   <section class="vh-100 gradient-custom">
@@ -20,19 +39,21 @@
               <div class="card bg-dark text-white" style="border-radius: 1rem;">
                 <div class="card-body p-5 text-center">
                   <div class="mb-md-5 mt-md-4 pb-5">
-                    <form action="index.php" method="post">
-                    <h2 class="fw-bold mb-2 text-uppercase">Edit Profile</h2>
-                    <p class="text-white-50 mb-5">Change your username or password</p>
-                    <div class="form-outline form-white mb-4 text-center">
-                      <input type="text" id="typeUsernameX" name="username" class="form-control form-control-lg">
-                      <label class="form-label" for="typeEmailX">Username</label>
-                    </div>
-                    <div class="form-outline form-white mb-4 text-center">
-                      <input type="password" id="typePasswordX" name="password" class="form-control form-control-lg">
-                      <label class="form-label" for="typePasswordX">Password</label>
-                    </div>
-                    <input type="submit" value="Submit" name="" href="index.php" class="btn btn-outline-light btn-lg px-5">
-                    <input type="submit" value="Cancel" name="" href="index.php" class="btn btn-outline-light btn-lg px-5">
+                    <form action="code.php" method="post">
+                      <h2 class="fw-bold mb-2 text-uppercase">Edit Profile</h2>
+                      <p class="text-white-50 mb-5">Change your username or password</p>
+                      <div class="form-outline form-white mb-4 text-center">
+                        <input type="text" id="typeUsernameX" name="username" class="form-control form-control-lg">
+                        <label class="form-label" for="typeEmailX">Username</label>
+                      </div>
+                      <div class="form-outline form-white mb-4 text-center">
+                        <input type="password" id="typePasswordX" name="password" class="form-control form-control-lg">
+                        <label class="form-label" for="typePasswordX">Password</label>
+                      </div>
+                      <input class="d-none" name="id" value="<?php echo $user_id; ?>">
+                      <input class="d-none" name="old_username" value="<?php echo $username; ?>">
+                      <input type="submit" value="Submit" name="update" class="btn btn-outline-light btn-lg px-5">
+                      <a href="twitter-login.php?user=<?php echo $username ?>" class="btn btn-outline-light btn-lg px-5 text-decoration-none">Cancel</a>
                     </form>
                   </div>
                   <div>
