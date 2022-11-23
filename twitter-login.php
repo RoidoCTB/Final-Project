@@ -62,6 +62,7 @@
                               <div><?php echo $tweet['text']; ?></div>
                               <form action="code.php" method="post">
                             <button type="submit" class="btn btn-danger float-end" name="delete" value="<?php echo $tweet['id']; ?>"><i class="bi bi-trash-fill"></i></button>
+                            <input class="d-none" name="username" value="<?php echo $username; ?>">
                             </form>
                             </div>
                           </li>
