@@ -98,31 +98,6 @@
         }
 
     }
-    if(isset($_POST['edit']))
-    {
-        $student_id = $_POST['edit'];
-        header("Location: edit.php");
-    }
 
-    if(isset($_POST["update"]))
-    {
-        $student_id = $_POST['student_id'];
 
-        $password = $_POST['pass'];
-        $username = $_POST['username'];
-
-        $query = "UPDATE user 
-                    SET pass='$password', username='$username'
-                    WHERE id='$student_id'";
-        $query_run = mysqli_query($con, $query);
-
-        if(!$query_run)
-        {
-            echo "Update failed!";
-        }
-        else
-        {
-            header("Location: index.php");
-        }
-    }
 ?>

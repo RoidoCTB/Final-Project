@@ -24,9 +24,7 @@
 <div class="container">
         <div class="row">
             <div class="col-9 mx-auto">
-              <form action="code.php" method="post">
-              <button type="submit" class="btn btn-primary float-end" name="edit" value="<?php echo $user['id']; ?>">Edit Profile</button>
-              </form>
+            <a href="edit.php"><button type="submit" class="btn btn-primary float-end" name="edit">Edit Profile</button></a>
                 <a href="index.php">Sign out</a>
             </div>
         </div>
