@@ -60,6 +60,9 @@
                             <div class="p-1 text-white">
                               <h4><u><?php echo $tweet['username']; ?></u></h4>
                               <div><?php echo $tweet['text']; ?></div>
+                              <form action="code.php" method="post">
+                            <button type="submit" class="btn btn-danger float-end" name="delete" value="<?php echo $tweet['id']; ?>"><i class="bi bi-trash-fill"></i></button>
+                            </form>
                             </div>
                           </li>
                   <?php

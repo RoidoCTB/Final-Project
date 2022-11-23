@@ -80,4 +80,22 @@
         }
     }
 
+    if(isset($_POST['delete']))
+    {
+        $username = $_POST['username'];
+        $tweet_id = $_POST['delete'];
+
+        $query = "DELETE FROM tweet WHERE id='$tweet_id'";
+        $query_run = mysqli_query($con, $query);
+
+        if(!$query_run)
+        {
+            echo "Tweet not deleted!";
+        }
+        else
+        {
+            header("Location: twitter-login.php?user=$username");
+        }
+
+    }
 ?>
