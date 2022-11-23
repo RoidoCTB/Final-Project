@@ -23,7 +23,10 @@
 
 <div class="container">
         <div class="row">
-            <div class="col-9 mx-auto float-end">
+            <div class="col-9 mx-auto">
+              <form action="code.php" method="post">
+              <button type="submit" class="btn btn-primary float-end" name="edit" value="<?php echo $user['id']; ?>">Edit Profile</button>
+              </form>
                 <a href="index.php">Sign out</a>
             </div>
         </div>
@@ -61,7 +64,7 @@
                               <h4><u><?php echo $tweet['username']; ?></u></h4>
                               <div><?php echo $tweet['text']; ?></div>
                               <form action="code.php" method="post">
-                            <button type="submit" class="btn btn-danger float-end" name="delete" value="<?php echo $tweet['id']; ?>"><i class="bi bi-trash-fill"></i></button>
+                            <button type="submit" class="btn btn-danger float-end " name="delete" value="<?php echo $tweet['id']; ?>"><i class="bi bi-trash-fill"></i></button>
                             <input class="d-none" name="username" value="<?php echo $username; ?>">
                             </form>
                             </div>
